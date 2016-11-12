@@ -12,7 +12,7 @@
 #ifdef _WIN32
 #include <intrin.h>
 #else
-#ifndef __arm__
+#if !defined(__arm__) && !defined(__arm64__)
 #include <cpuid.h>
 #endif
 #endif	/* _WIN32 */
