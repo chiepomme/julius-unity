@@ -65,7 +65,6 @@ public static class Julius
     const int SamplingRate = 16000;
 
     static UnitySynchronizationContext context;
-    static Thread thread;
     static AudioClip clip;
 
     // コールバックのインスタンスを保持しておかないと GC されてしまう
@@ -82,12 +81,6 @@ public static class Julius
 
     public static void Begin(string path)
     {
-        if (thread != null && thread.IsAlive)
-        {
-            // TODO: 前回のが生きている場合にはなんとかする
-            finish();
-        }
-
         context = UnitySynchronizationContext.Create();
         clip = Microphone.Start("", true, ClipLengthSeconds, SamplingRate);
 
@@ -104,7 +97,7 @@ public static class Julius
         set_result_func(outputResultCallback);
         set_log_to_file("julius_log.txt");
 
-        thread = new Thread(new ThreadStart(() =>
+        var thread = new Thread(new ThreadStart(() =>
         {
             start(path);
             DebugLog("Thread Finished");
