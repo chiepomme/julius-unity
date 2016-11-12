@@ -27,7 +27,7 @@ EXPORT_API void set_log_to_file(const char* path)
 	jlog_set_output(fopen(path, "w"));
 }
 
-EXPORT_API void set_log_to_stdout(BOOL use_stderr_instead)
+EXPORT_API void set_log_to_stdout(bool use_stderr_instead)
 {
 	if (use_stderr_instead)
 	{
@@ -611,7 +611,7 @@ char *adin_unity_input_name()
 	return "Unity Microphone";
 }
 
-BOOL create_engine()
+bool create_engine()
 {
 	ADIn* ad_in;
 
