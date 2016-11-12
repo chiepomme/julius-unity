@@ -5,6 +5,8 @@ using System.Threading;
 
 public static class Julius
 {
+    public static event Action<string> ResultReceived;
+
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate void DebugLogDelegate(string message);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -124,6 +126,8 @@ public static class Julius
         Marshal.Copy(resultStringPointer, buffer, 0, length);
         var result = USEncoder.ToEncoding.ToUnicode(buffer);
         DebugLog(result);
+
+        context.Post((r) => { if (ResultReceived != null) ResultReceived((string)r); }, result);
     }
 
     [AOT.MonoPInvokeCallback(typeof(DebugLogDelegate))]

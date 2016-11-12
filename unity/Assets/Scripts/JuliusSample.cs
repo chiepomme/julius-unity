@@ -19,7 +19,29 @@ class JuliusSample : MonoBehaviour
         }
         path += "grammar-kit/grammar/mic.jconf";
 
+        Julius.ResultReceived += OnResultReceived;
         Julius.Begin(path);
+    }
+
+    string lastResult = "";
+
+    void OnResultReceived(string result)
+    {
+        if (result.Contains("confidence_score"))
+        {
+            lastResult = "<FinalResult>\n";
+        }
+        else
+        {
+            lastResult = "<First Pass Progress>\n";
+        }
+
+        lastResult += result;
+    }
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(0, 0, Screen.width, Screen.height), lastResult);
     }
 
     void OnDestroy()
