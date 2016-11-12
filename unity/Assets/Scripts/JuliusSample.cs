@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 class JuliusSample : MonoBehaviour
 {
-    void Awake()
+    IEnumerator Start()
     {
+        yield return Application.RequestUserAuthorization(UserAuthorization.Microphone);
+
         var path = Application.dataPath;
         switch (Application.platform)
         {
