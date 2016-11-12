@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BC8F3551DD6A52B0013C801 /* lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BC8F3531DD6A52B0013C801 /* lib.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BD91EB81DCECA13001F87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD91EB41DCECA13001F87F1 /* julius.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BD91E931DCEC9B8001F87F1;
+			remoteInfo = julius;
+		};
+		4BD91ED31DCECA58001F87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD91ECF1DCECA58001F87F1 /* sent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BD91EC31DCECA4E001F87F1;
+			remoteInfo = sent;
+		};
+		4BD922811DCEE028001F87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD91EB41DCECA13001F87F1 /* julius.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BD91E921DCEC9B8001F87F1;
+			remoteInfo = julius;
+		};
+		4BD922831DCEE02C001F87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD91ECF1DCECA58001F87F1 /* sent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BD91EC21DCECA4E001F87F1;
+			remoteInfo = sent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BD91EA61DCECA03001F87F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4BC8F3531DD6A52B0013C801 /* lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lib.c; sourceTree = "<group>"; };
+		4BC8F3541DD6A52B0013C801 /* lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib.h; sourceTree = "<group>"; };
+		4BD91EA81DCECA03001F87F1 /* libjulius-unity-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libjulius-unity-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD91EB41DCECA13001F87F1 /* julius.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = julius.xcodeproj; sourceTree = "<group>"; };
+		4BD91ECF1DCECA58001F87F1 /* sent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = sent.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BD91EA51DCECA03001F87F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BC8F3521DD6A52B0013C801 /* julius-unity-native */ = {
+			isa = PBXGroup;
+			children = (
+				4BC8F3531DD6A52B0013C801 /* lib.c */,
+				4BC8F3541DD6A52B0013C801 /* lib.h */,
+			);
+			name = "julius-unity-native";
+			path = "../julius-unity-native";
+			sourceTree = "<group>";
+		};
+		4BD91E9F1DCECA03001F87F1 = {
+			isa = PBXGroup;
+			children = (
+				4BC8F3521DD6A52B0013C801 /* julius-unity-native */,
+				4BD91ECF1DCECA58001F87F1 /* sent.xcodeproj */,
+				4BD91EB41DCECA13001F87F1 /* julius.xcodeproj */,
+				4BD91EA91DCECA03001F87F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BD91EA91DCECA03001F87F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BD91EA81DCECA03001F87F1 /* libjulius-unity-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BD91EB51DCECA13001F87F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BD91EB91DCECA13001F87F1 /* libjulius.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BD91ED01DCECA58001F87F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BD91ED41DCECA58001F87F1 /* libsent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BD91EA71DCECA03001F87F1 /* julius-unity-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD91EB11DCECA03001F87F1 /* Build configuration list for PBXNativeTarget "julius-unity-ios" */;
+			buildPhases = (
+				4BD91EA41DCECA03001F87F1 /* Sources */,
+				4BD91EA51DCECA03001F87F1 /* Frameworks */,
+				4BD91EA61DCECA03001F87F1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BD922841DCEE02C001F87F1 /* PBXTargetDependency */,
+				4BD922821DCEE028001F87F1 /* PBXTargetDependency */,
+			);
+			name = "julius-unity-ios";
+			productName = "julius-unity-ios";
+			productReference = 4BD91EA81DCECA03001F87F1 /* libjulius-unity-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BD91EA01DCECA03001F87F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = chiepomme;
+				TargetAttributes = {
+					4BD91EA71DCECA03001F87F1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S7744P66AX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4BD91EA31DCECA03001F87F1 /* Build configuration list for PBXProject "julius-unity-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4BD91E9F1DCECA03001F87F1;
+			productRefGroup = 4BD91EA91DCECA03001F87F1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4BD91EB51DCECA13001F87F1 /* Products */;
+					ProjectRef = 4BD91EB41DCECA13001F87F1 /* julius.xcodeproj */;
+				},
+				{
+					ProductGroup = 4BD91ED01DCECA58001F87F1 /* Products */;
+					ProjectRef = 4BD91ECF1DCECA58001F87F1 /* sent.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4BD91EA71DCECA03001F87F1 /* julius-unity-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4BD91EB91DCECA13001F87F1 /* libjulius.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjulius.a;
+			remoteRef = 4BD91EB81DCECA13001F87F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4BD91ED41DCECA58001F87F1 /* libsent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsent.a;
+			remoteRef = 4BD91ED31DCECA58001F87F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BD91EA41DCECA03001F87F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC8F3551DD6A52B0013C801 /* lib.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BD922821DCEE028001F87F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = julius;
+			targetProxy = 4BD922811DCEE028001F87F1 /* PBXContainerItemProxy */;
+		};
+		4BD922841DCEE02C001F87F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sent;
+			targetProxy = 4BD922831DCEE02C001F87F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BD91EAF1DCECA03001F87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4BD91EB01DCECA03001F87F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BD91EB21DCECA03001F87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S7744P66AX;
+				HEADER_SEARCH_PATHS = (
+					"../julius/libsent/include/**",
+					"../julius/libjulius/include/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4BD91EB31DCECA03001F87F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S7744P66AX;
+				HEADER_SEARCH_PATHS = (
+					"../julius/libsent/include/**",
+					"../julius/libjulius/include/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BD91EA31DCECA03001F87F1 /* Build configuration list for PBXProject "julius-unity-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD91EAF1DCECA03001F87F1 /* Debug */,
+				4BD91EB01DCECA03001F87F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD91EB11DCECA03001F87F1 /* Build configuration list for PBXNativeTarget "julius-unity-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD91EB21DCECA03001F87F1 /* Debug */,
+				4BD91EB31DCECA03001F87F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BD91EA01DCECA03001F87F1 /* Project object */;
+}
